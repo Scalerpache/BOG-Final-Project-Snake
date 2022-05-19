@@ -11,7 +11,6 @@ const gameBoard = document.getElementById('game-board')
 let tempSnake = new Snake;
 let tempFood = new Food;
 
-
 function main(currentTime) {
   if (gameOver) {
     if (confirm('You lost. Press ok to restart.')) {
@@ -19,7 +18,6 @@ function main(currentTime) {
     }
     return
   }
-
 
   window.requestAnimationFrame(main)
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
